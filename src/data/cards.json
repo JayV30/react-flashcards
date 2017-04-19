@@ -1,0 +1,36 @@
+{
+  "cards": [
+    {
+      "id":1,
+      "front": {
+        "title":"FlashCard 1",
+        "subtitle":"here is flashcard 1"
+      },
+      "back": {
+        "title":"FlashCard 1 Definition",
+        "text":"here is the definition of <strong>flashcard 1&trade;</strong>",
+        "imgUrl":"assets/img/trebek.jpg",
+        "imgAltText":"Alex Trebek"
+      },
+      "addInfo": {
+        "text":"here is some additional info."
+      }
+    },
+    {
+      "id":2,
+      "front": {
+        "title":"FlashCard 2",
+        "subtitle":"here is flashcard 2"
+      },
+      "back": {
+        "title":"FlashCard 2 Definition",
+        "text":"here is the definition of <strong>flashcard 2&trade;</strong>",
+        "imgUrl":"assets/img/trebek2.jpg",
+        "imgAltText":"Alex Trebek"
+      },
+      "addInfo": {
+        "text":"here is some additional info."
+      }
+    }
+  ]
+}

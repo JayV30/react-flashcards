@@ -1,0 +1,22 @@
+.nav-wrapper {
+  height: 36px;
+  width: 250px;
+  background-color: rgba(228,226,201,0.8);
+  padding: 10px;
+  border: @dark-grey;
+  border-radius: 4px;
+  margin-top: 20px;
+  .nav-btn {
+    .button(@olive, @dark-grey, 80px, 0, 10px, 36px);
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:not(:last-of-type) {
+      margin-right: 5px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
