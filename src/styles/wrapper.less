@@ -13,7 +13,7 @@ html {
 }
 body {
   background: @main-bg;
-  background-repeat: none; 
+  background-repeat: none;
 }
 #app {
   width: 100%;
@@ -26,4 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  perspective-origin:"50% 50% 0px";
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { TweenMax } from 'gsap';
 
 import CardFront from '../stateless/cardFront';
 import CardBack from '../stateless/cardBack';
@@ -9,28 +10,39 @@ class Card extends Component {
     super(props);
 
     this.state = {
-      side: "front",
+      animating: false,
+      displaying: "front",
       displayAdditionalModal: false
     }
 
     this.toggleSide = this.toggleSide.bind(this);
+    this.toggleAnimating = this.toggleAnimating.bind(this);
   }
 
   componentWillReceiveProps(nextProps, nextState) {
-    this.setState({ side: "front" });
+    TweenMax.killAll(true);
+    TweenMax.set(this.cardwrap, {css:{rotationY:0}});
+    this.setState({ animating:false, displaying:"front" });
   }
 
   toggleSide() {
-    let side = (this.state.side === "front") ? "back" : "front";
-    this.setState({ side: side });
+    if (this.state.animating) return;
+    var newDisplay = (this.state.displaying === "front") ? "back" : "front";
+    this.setState({animating:true}, () => {
+      TweenMax.to(this.cardwrap, 0.8, {css:{rotationY:"+=180"}, onComplete:this.toggleAnimating, onCompleteScope:this, onCompleteParams:[false, newDisplay], ease:Power2.easeInOut});
+      TweenMax.to(this.cardwrap, 0.4, {css:{z:"-=100"}, yoyo:true, repeat:1, ease:Power2.easeIn});
+    })
+  }
+
+  toggleAnimating(p_bool, p_display) {
+    this.setState({animating:p_bool, displaying:p_display});
   }
 
   render() {
-    let cardSide = (this.state.side === "front") ? <CardFront front={this.props.cardToDisplay.front} /> : <CardBack back={this.props.cardToDisplay.back} />;
-
     return (
-      <div id="card" onClick={this.toggleSide}>
-        {cardSide}
+      <div ref={(d) => { this.cardwrap = d }} id="card" onClick={this.toggleSide}>
+        <CardFront front={this.props.cardToDisplay.front} />
+        <CardBack back={this.props.cardToDisplay.back} />
       </div>
     )
   }

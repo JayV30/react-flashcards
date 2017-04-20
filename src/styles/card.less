@@ -1,0 +1,29 @@
+#card {
+  width: 500px;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: @off-white;
+  border: 1px solid @dark-grey;
+  box-shadow: @shadow;
+  cursor:pointer;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-front-wrapper,
+.card-back-wrapper {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.card-back-wrapper {
+  transform: matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
+  img {
+    float: right;
+    max-height: 160px;
+  }
+}

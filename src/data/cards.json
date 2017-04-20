@@ -3,12 +3,12 @@
     {
       "id":1,
       "front": {
-        "title":"FlashCard 1",
-        "subtitle":"here is flashcard 1"
+        "title":"Alex Trebek",
+        "subtitle":"suave gentleman"
       },
       "back": {
-        "title":"FlashCard 1 Definition",
-        "text":"here is the definition of <strong>flashcard 1&trade;</strong>",
+        "title":"Alex Trebek Definition",
+        "text":"<strong>Who is</strong> the host of Jeopardy&trade?",
         "imgUrl":"assets/img/trebek.jpg",
         "imgAltText":"Alex Trebek"
       },
@@ -19,14 +19,14 @@
     {
       "id":2,
       "front": {
-        "title":"FlashCard 2",
-        "subtitle":"here is flashcard 2"
+        "title":"Sir Sean Connery",
+        "subtitle":"old man"
       },
       "back": {
-        "title":"FlashCard 2 Definition",
-        "text":"here is the definition of <strong>flashcard 2&trade;</strong>",
-        "imgUrl":"assets/img/trebek2.jpg",
-        "imgAltText":"Alex Trebek"
+        "title":"Sean Connery Definition",
+        "text":"<strong>Who is</strong> Alex Trebek's nemesis?",
+        "imgUrl":"assets/img/connery.png",
+        "imgAltText":"Sean Connery"
       },
       "addInfo": {
         "text":"here is some additional info."
@@ -40,8 +40,8 @@
       "back": {
         "title":"Carina",
         "text":"The junction of the pulmonary veins and the left atrium where the superior and the inferior pulmonary veins meet.",
-        "imgUrl":"assets/img/trebek2.jpg",
-        "imgAltText":"Alex Trebek"
+        "imgUrl":"assets/img/carina.png",
+        "imgAltText":"PA view of the Left Atrium"
       },
       "addInfo": {
         "text":"here is some additional info."
@@ -55,12 +55,12 @@
       "back": {
         "title":"Pulmonary vein antrum",
         "text":"The antrum is outside of the PV ostia at the junction of the LA to the PV",
-        "imgUrl":"assets/img/trebek2.jpg",
-        "imgAltText":"Alex Trebek"
+        "imgUrl":"assets/img/antrum.png",
+        "imgAltText":"PA view of the Left Atrium"
       },
       "addInfo": {
         "text":"here is some additional info."
       }
-    }    
+    }
   ]
 }
