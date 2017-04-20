@@ -1,0 +1,66 @@
+{
+  "cards": [
+    {
+      "id":1,
+      "front": {
+        "title":"Alex Trebek",
+        "subtitle":"suave gentleman"
+      },
+      "back": {
+        "title":"Alex Trebek Definition",
+        "text":"<strong>Who is</strong> the host of Jeopardy&trade?",
+        "imgUrl":"assets/img/trebek.jpg",
+        "imgAltText":"Alex Trebek"
+      },
+      "addInfo": {
+        "text":"here is some additional info."
+      }
+    },
+    {
+      "id":2,
+      "front": {
+        "title":"Sir Sean Connery",
+        "subtitle":"old man"
+      },
+      "back": {
+        "title":"Sean Connery Definition",
+        "text":"<strong>Who is</strong> Alex Trebek's nemesis?",
+        "imgUrl":"assets/img/connery.png",
+        "imgAltText":"Sean Connery"
+      },
+      "addInfo": {
+        "text":"here is some additional info."
+      }
+    },
+    {
+      "id":3,
+      "front": {
+        "title":"Carina"
+      },
+      "back": {
+        "title":"Carina",
+        "text":"The junction of the pulmonary veins and the left atrium where the superior and the inferior pulmonary veins meet.",
+        "imgUrl":"assets/img/carina.png",
+        "imgAltText":"PA view of the Left Atrium"
+      },
+      "addInfo": {
+        "text":"here is some additional info."
+      }
+    },
+    {
+      "id":4,
+      "front": {
+        "title":"Pulmonary vein antrum"
+      },
+      "back": {
+        "title":"Pulmonary vein antrum",
+        "text":"The antrum is outside of the PV ostia at the junction of the LA to the PV",
+        "imgUrl":"assets/img/antrum.png",
+        "imgAltText":"PA view of the Left Atrium"
+      },
+      "addInfo": {
+        "text":"here is some additional info."
+      }
+    }
+  ]
+}
