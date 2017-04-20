@@ -29,15 +29,30 @@ class Main extends Component {
   }
 
   handleCardSelect(cardId) {
-    this.setState({ displayedCard: cardId });
+    let card = this.state.cards.find((ele, idx) => {
+      return ele.id === cardId;
+    })
+    this.setState({ displayedCard: card });
   }
 
   goBack() {
-
+    if (!this.state.displayedCard) return null;
+    let curCardIdx = this.state.cards.findIndex((ele, idx) => {
+      return ele.id === this.state.displayedCard.id;
+    });
+    let newIdx = (curCardIdx === 0) ? this.state.cards.length - 1 : curCardIdx - 1;
+    let newCard = { ...this.state.cards[newIdx] };
+    this.setState({ displayedCard: newCard });
   }
 
   goNext() {
-
+    if (!this.state.displayedCard) return null;
+    let curCardIdx = this.state.cards.findIndex((ele, idx) => {
+      return ele.id === this.state.displayedCard.id;
+    });
+    let newIdx = (curCardIdx === this.state.cards.length -1) ? 0 : curCardIdx + 1;
+    let newCard = { ...this.state.cards[newIdx] };
+    this.setState({ displayedCard: newCard });
   }
 
   goMenu() {

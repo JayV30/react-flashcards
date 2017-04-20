@@ -31,6 +31,36 @@
       "addInfo": {
         "text":"here is some additional info."
       }
-    }
+    },
+    {
+      "id":3,
+      "front": {
+        "title":"Carina"
+      },
+      "back": {
+        "title":"Carina",
+        "text":"The junction of the pulmonary veins and the left atrium where the superior and the inferior pulmonary veins meet.",
+        "imgUrl":"assets/img/trebek2.jpg",
+        "imgAltText":"Alex Trebek"
+      },
+      "addInfo": {
+        "text":"here is some additional info."
+      }
+    },
+    {
+      "id":4,
+      "front": {
+        "title":"Pulmonary vein antrum"
+      },
+      "back": {
+        "title":"Pulmonary vein antrum",
+        "text":"The antrum is outside of the PV ostia at the junction of the LA to the PV",
+        "imgUrl":"assets/img/trebek2.jpg",
+        "imgAltText":"Alex Trebek"
+      },
+      "addInfo": {
+        "text":"here is some additional info."
+      }
+    }    
   ]
 }

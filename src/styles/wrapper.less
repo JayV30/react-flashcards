@@ -1,14 +1,19 @@
 //***** MAIN *****//
 html, body, #app {
-  .font-stack();
   height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 html {
-  background: @main-bg;
+  .font-stack();
+  background-image: url("../assets/img/desk.jpg");
   background-repeat: none;
+  background-size: cover;
+}
+body {
+  background: @main-bg;
+  background-repeat: none; 
 }
 #app {
   width: 100%;
@@ -16,4 +21,9 @@ html {
   align-items: center;
   justify-content: center;
   overflow-y: auto;
+}
+.centering-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
